@@ -32,7 +32,7 @@ Phase One will focus on developing a structured interface with Scientific Servic
 
 ## Process for Developing and Adopting Service Workflows
 
-For each Scientific Service core, we will use a common implementation process to design a routine workflow that works for staff and customers while supporting born-FAIR data practices:
+For each Scientific Service core, we will use a common implementation process to design a routine workflow that works for staff and customers, follows metadata guidelines from the Data Standards Group,  and supports born-FAIR data practices:
 
 1. **Discover the current workflow.** Gather input from service staff and customers to understand current practices, required metadata, pain points, and which parts of the workflow should remain unchanged.
 2. **Define the target workflow.** Document the desired future-state process, including what data and metadata should be collected, when they should be collected, and how they should connect to assays, samples, and projects.
