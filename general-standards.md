@@ -4,29 +4,6 @@
 
 This page provides general guidance on annotation standards for studies, assays, samples, and related entities. The goal is to support consistent, traceable, and standards-compliant metadata annotation across the documentation.
 
-### Annotation Workflow
-
-```text
-Idea or new annotation need
-        |
-        v
-Check existing approved terms
-        |
-        +----> Term exists -----------------> Use approved term
-        |
-        v
-No suitable term found
-        |
-        v
-Request new term
-        |
-        v
-Review and validation by Data Standards Group
-        |
-        v
-Approved term used in study, sample, and assay annotations
-```
-
 ## ISA Model Basics
 
 The ISA model organizes metadata across investigations, studies, and assays:
@@ -92,11 +69,25 @@ Both **source ID** and **sample ID** are required so that the source and sample 
 
 ## Term List Requirements
 
-This page should also describe:
+### Annotation Workflow
 
-- How to check for existing terms
-- How to request new terms
-
-## Activity
-
-Document the required activities for annotation review, term validation, and standards compliance as needed.
+```text
+Idea or new annotation need
+        |
+        v
+Check existing approved terms
+        |
+        +----> Term exists -----------------> Use approved term
+        |
+        v
+No suitable term found
+        |
+        v
+Request new term
+        |
+        v
+Review and validation by Data Standards Group
+        |
+        v
+Approved term used in study, sample, and assay annotations
+```
