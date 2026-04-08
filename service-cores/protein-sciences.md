@@ -23,6 +23,13 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 - **Animal ID #**
   - (+) **Requirement:** Required for tissues (this is not necessarily correct, not really required)
   - (-) we would like to change this to "Source ID," but for now it will remain as is
+  - we can consider removing this and replace with Source ID
+
+- **Genotype #**
+  - (+) **Requirement:** 
+
+- **Strain #**
+  - (+) **Requirement:** 
 
 - **Date of Birth**
   - **Requirement:** Animal samples only
@@ -35,7 +42,8 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 
 - **Sample Type**
   - **Requirement:** Required
-  - (+) recommend a drop down with "tissue", "cell", and "fluid" as options. How does this impact the lab's workflows?
+  - (+) recommend a drop down with "tissue", "cell", "fluid", and "other" as options. How does this impact the lab's workflows? PS has even assayed bedding chips.
+  - Brian says this is good to go and is how iLab is set up. 
 
 - **Other Sample Type**
   - free text
@@ -44,6 +52,11 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
   - **Requirement:** Required for tissues
   - whis is this metadata used for?
   - (+) we can provide a list of controlled terms for the most popular options, but should we split out to fluid and tissue separately?
+  - it's ok to separate these into two columns
+  - supernatent is more like cell media
+  - Fluid types: urine, plasma, media, serum, cerebrospinal fluid, other (whole blood goes into other)
+  - For tissue if you have every major organ that is a good start, there might be a few others form the list. Look at research necropsy, they will have all the terms!!!
+  - Some terms can be structures from different tissue. E.g., medulla is a structure in the brain and the kidney. 
 
 - **Other Fluid/Tissue Type**
   - free text
@@ -52,6 +65,12 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
   - **Requirement:** Optional
   - Many of the cell types in historical data are not cell types. Is this overloaded for other purposes?
   - (+) something needs to change, but it's not clear what
+  - keep this as free text for now. Even cell lines are varable. We could standardize on a list of the major cell types and cell lines, and then expand over time.
+  - Brian says we can restrict this to a cell line-standard nomenclature. Would strain and genotype cover cell line? There are commercial cell lines, then lines from individual harvest. Check in with NYSCF folks. 
+
+- **Cell Line**
+  - **Requirement:** Optional
+  - separate from cell type
 
 - **Other Cell Type**
   - free text
@@ -84,6 +103,8 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
   - what should the controlled term options be?
   - is this study metadata?
   - can this be removed?
+  - Brian says we can get rid of "condition" and just use "treatment"
+  - We may have to allow users to allow multiple values in this column, e.g., diet and drug.
 
 - **Sample Weight (mg)**
   - **Requirement:** Required for protein samples
@@ -95,6 +116,7 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
   - **Note:** Protein samples: fill all that apply.
   - (+) enforce float only, no units to be entered
   - customers have not used this. is this column needed?
+  - Brian says that if people do their own concentration then this is needed, but PS usually does this in house.
 
 - **Sample Volume (µL)**
   - **Requirement:** Required for protein samples
@@ -104,9 +126,11 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 - **Group #**
   - **Requirement:** Optional
   - (-) what is this for? is this a cohort? pooled samples? ages? timepoints? sex? generation number? are these study factors?
+  - Brian says restrict this to numeric values - this would be used for comparrison of samples during in-house analysis.
 
 - **Additional Comments (barcode)**
   - **Requirement:** Optional
+  - pools are usually indicated here. 
 
 
 ## File Type
