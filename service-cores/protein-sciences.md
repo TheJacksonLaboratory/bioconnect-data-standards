@@ -1,7 +1,5 @@
 # Protein Sciences Data Standards
 
-Should we consider keeping source and sample metadata that are not relevant to the service core in a separate "metadata only" assay?
-
 ## Sample Sheets
 The Protein Sciences Lab uses one sample sheet for all assay types. The columns are as follows:
 
@@ -136,4 +134,7 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 ## File Type
 To be determined. We will want to work through the different assay outputs, but can do this separately. 
 For the protein and metabolite assays, the column headings are sample IDs, but do these column headings have other info as well? Ideally for the analyst, the headings would be only and exacly the sample ID so that it can be matched up with the metadata. 
+
+## Open questions
+Should we consider keeping source and sample metadata that are not relevant to the service core in a separate "metadata only" assay?
 
