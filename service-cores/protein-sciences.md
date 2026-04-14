@@ -1,11 +1,13 @@
 # Protein Sciences Data Standards
 
 ## Sample Sheets
-The Protein Sciences Lab uses one sample sheet for all assay types. The columns are as follows:
+The Protein Sciences Lab uses one sample sheet for all assay types. Details about each of the columns in the sample sheet are listed below. For each column we indicate if the field should be required. Wherever there is a (+) there is a recommended change. Wherever there is a (-) there is a change to consider.
+
+The columns are as follows:
 
 - **Customer Sample Name**
   - **Requirement:** Required (alphanumeric only)
-  - (-) keep this as is for now because we can map to sample ID in the background.
+  - (-) Keep this as is for now because we can map to sample ID in the background. Consider changing to Sample ID.
 
 - **L7 Customer Sample Name**
   - **Requirement:** Display only
@@ -20,14 +22,13 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 
 - **Animal ID #**
   - (+) **Requirement:** Required for tissues (this is not necessarily correct, not really required)
-  - (-) we would like to change this to "Source ID," but for now it will remain as is
-  - we can consider removing this and replace with Source ID
+  - (-) We would like to change this to "Source ID," but for now it will remain as is. Consider removing this and replace with Source ID
 
 - **Genotype #**
-  - (+) **Requirement:** 
+  - (+) **Requirement:** make this required
 
 - **Strain #**
-  - (+) **Requirement:** 
+  - (+) **Requirement:** make this required
 
 - **Date of Birth**
   - **Requirement:** Animal samples only
@@ -41,7 +42,7 @@ The Protein Sciences Lab uses one sample sheet for all assay types. The columns 
 - **Sample Type**
   - **Requirement:** Required
   - (+) recommend a drop down with "tissue", "cell", "fluid", and "other" as options. How does this impact the lab's workflows? PS has even assayed bedding chips.
-  - Brian says this is good to go and is how iLab is set up. 
+  - Brian says this change is OK, and is how iLab is set up. 
 
 - **Other Sample Type**
   - free text
