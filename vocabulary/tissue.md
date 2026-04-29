@@ -80,10 +80,10 @@ external_mappings:
   accession_url: http://purl.obolibrary.org/obo/UBERON_0002037
 ```
 
-## cerebral hemishere
+## cerebral hemisphere
 
 ```yaml
-id: cerebral_hemishere
+id: cerebral_hemisphere
 label: cerebral hemisphere
 description: One of two bilateral, largely symmetrical organ subdivisions within the telencephalon which contain the cerebral cortex and cerebral white matter.
 parent: tissue
