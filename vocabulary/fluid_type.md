@@ -14,7 +14,7 @@ related_to: []
 external_mappings:
 - accession_id: UBERON:0001359
   accession_url: http://purl.obolibrary.org/obo/UBERON_0001359
-`\
+```
 
 ## media
 
