@@ -58,7 +58,7 @@ related_to: []
 external_mappings:
 - accession_id: NCIT:C107432
   accession_url: http://purl.obolibrary.org/obo/NCIT_C107432
-`\
+```
 
 ## ELISA
 
