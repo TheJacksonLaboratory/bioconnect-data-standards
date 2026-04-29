@@ -10,7 +10,8 @@ parent: cell_type
 status:
 notes:
 - do we want to deviate from our chosen ontologies in order to better accommodate terms?
-- induced bone marrow-derived macrophage
+- submitted as "induced bone marrow-derived macrophage"
+- should possibly be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: BTO:0004732
@@ -102,6 +103,7 @@ description:
 parent: cell_type
 status:
 notes:
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: CLO:0001230
@@ -117,6 +119,7 @@ description:
 parent: cell_type
 status:
 notes:
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: CLO:0003704
@@ -132,7 +135,8 @@ description: An immortal cell line cell that derives from proximal tubule.
 parent: cell_type
 status:
 notes:
-- unsure if the line is immortal or not
+- unsure if the line is immortal or not (was submitted as just "proximal tubule cell line"
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: CLO:0000370
@@ -194,6 +198,7 @@ description: Immortal mouse collecting duct of renal tubule-derived cell line.
 parent: cell_type
 status:
 notes:
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: CLO:0007449
@@ -224,6 +229,7 @@ description: A spontaneously immortalized, but nontransformed human mammary epit
 parent: cell_type
 status:
 notes:
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: CLO:0007599
@@ -240,6 +246,7 @@ parent: cell_type
 status:
 notes:
 - do we want to deviate from our chosen ontologies in order to better accommodate terms?
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: EFO:0004037
@@ -300,6 +307,7 @@ description: Cell line established from ascitic fluid derived from a patient dia
 parent: cell_type
 status:
 notes:
+- should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: EFO:0006458
@@ -315,7 +323,8 @@ description: One of the cells that compose the bulk of the islets of Langerhans 
 parent: cell_type
 status:
 notes:
-- No ontology term for the specific line
+- No ontology term for the specific line submitted (EndoCpH3 Cells)
+- if we change the term from the "pancreatic beta cell" umbrella to the specific line, should be moved from Cell Type to Cell Line if we opt for a designated Cell Line column
 related_to: []
 external_mappings:
 - accession_id: BTO:0000783
