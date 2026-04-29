@@ -26,6 +26,32 @@ related_to: []
 external_mappings: []
 ```
 
+## 50 mM Ammonium Bicarbonate
+
+```yaml
+id: 50mM_ammonium_bicarbonate
+label: 50 mM Ammonium Bicarbonate
+description:
+parent: sample_buffer
+status:
+notes:
+related_to: []
+external_mappings: []
+```
+
+## 50 mM HEPES, 6M Urea
+
+```yaml
+id: 50mM_hepes_6M_urea
+label: 50 mM HEPES, 6M Urea
+description:
+parent: sample_buffer
+status:
+notes:
+related_to: []
+external_mappings: []
+```
+
 ## 95% Ethanol
 
 ```yaml
@@ -290,6 +316,18 @@ external_mappings: []
 ```yaml
 id: rnase_free_water
 label: RNase-free Water
+description:
+parent: sample_buffer
+status:
+notes:
+related_to: []
+external_mappings: []
+```
+## StemFlex Medium
+
+```yaml
+id: stemflex_medium
+label: StemFlex Medium
 description:
 parent: sample_buffer
 status:
