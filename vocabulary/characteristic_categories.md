@@ -28,7 +28,9 @@ related_to: []
 external_mappings:
 - accession_id:
   accession_url:
-```## organism
+```
+
+## organism
 
 ```yaml
 id: organism
