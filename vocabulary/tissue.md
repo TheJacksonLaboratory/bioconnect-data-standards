@@ -143,22 +143,6 @@ external_mappings:
   accession_url: http://purl.obolibrary.org/obo/UBERON_0000922
 ```
 
-## fibroblasts
-
-```yaml
-id: fibroblasts
-label: fibroblasts
-description: A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.
-parent: tissue
-status:
-notes:
-- Cell type, not a tissue — reroute entry to the Cell Type field
-related_to: []
-external_mappings:
-- accession_id: CL:0000057
-  accession_url: http://purl.obolibrary.org/obo/CL_0000057
-```
-
 ## gastrocnemius
 
 ```yaml
