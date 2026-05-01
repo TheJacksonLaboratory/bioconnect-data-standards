@@ -288,7 +288,7 @@ external_mappings: []
 ## RLT Plus + β-Mercaptoethanol (Qiagen)
 
 ```yaml
-id: rlt_plus_β_mercaptoethanol_qiagen
+id: rlt_plus_beta_mercaptoethanol_qiagen
 label: RLT Plus + β-Mercaptoethanol (Qiagen)
 description:
 parent: sample_buffer
