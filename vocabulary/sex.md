@@ -20,7 +20,7 @@ external_mappings:
 ```yaml
 id: male
 label: male
-description:A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.
+description: A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.
 parent: sex
 status:
 notes:
