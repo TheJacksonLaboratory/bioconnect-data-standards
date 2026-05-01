@@ -358,7 +358,6 @@ notes:
 - Which one should we use. NCIT, CL or both?
 related_to: []
 external_mappings:
-external_mappings:
 - accession_id: CL:0002293
   accession_url: http://purl.obolibrary.org/obo/CL_0002293
 - accession_id: NCIT:C33771
