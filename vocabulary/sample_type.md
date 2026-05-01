@@ -9,7 +9,7 @@ description: A method for targeted DNA sequencing that uses oligonucleotide prim
 parent: sample_type
 status:
 notes:
-- defintion of the amplicon sequencing method
+- definition of the amplicon sequencing method
 related_to: []
 external_mappings:
 - accession_id: NCIT:C204813
