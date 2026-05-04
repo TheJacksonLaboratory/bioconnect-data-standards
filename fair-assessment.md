@@ -17,8 +17,7 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
 - Text: Data is identified by a persistent identifier
 - Priority: Essential
 - Score: 1
-- Evidence: Same as above. Example:
-https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157088
+- Evidence: Same as F1-01M. Example: data/157088
 - Gap: Same as F1-01M
 - Recommendation: Same as F1-01M
 
@@ -26,8 +25,8 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157088
 - Text: Metadata is identified by a globally unique identifier
 - Priority: Essential
 - Score: 1
-- Evidence: The identifer assigned to metadata objects in BioConnect is globally unique in that it is constructed using the entity type and entity unique ID. The combination of these two values is guaranteed to be unique. In addition, the identifier is also dependent on the environmennt. For example, the identifier for a metadata object in the DEV environment is different from the identifier for the same metadata object in the PRD environment.
-- Gap: As with F1-01M, the identifier is dependent on a specific angular route in the front end BioConnect application. These identifiers should be independent of a specific application or front end route in order to be truly globally unique.
+- Evidence: The identifer assigned to metadata objects in BioConnect is globally unique in that it is constructed using the entity type and entity primary key. The combination of these two values and the bioconnect domain is guaranteed to be unique. 
+- Gap: As with F1-01M, the identifier is dependent on a specific angular route in the front end BioConnect application. These identifiers should be independent of a specific application or front end route in order to be truly globally unique. In addition, the identifier is also dependent on the environmennt. For example, the identifier for a metadata object in the DEV environment is different from the identifier for the same metadata object in the PRD environment, because the root url is different.
 - Recommendation: Implement a globally unique identifier scheme for metadata objects that is independent of the front end application and independent of environment (eg DEV, SQA, PRD). Uniqueness should be based on a dedicated root URL in combination with an entity type and an ID that is unique within the context of the entity type.
 
 ### F1-02D
@@ -43,30 +42,33 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157088
 ### F2-01M
 - Text: Rich metadata is provided to allow discovery
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: The metadata model for BioConnect is designed to capture metadata in compliance with the ISA community standard. All data are connected to a study and assay. Study metadata includes information about the design, factors, contacts, and the publications associated with the study. Assay metadata includes the measurement type, equipment, protocols, and samples. This rich metadata allows users to discover relevant data based on their research interests and needs.
+- Gap: N/A
+- Recommendation: N/A
 
 ## F3
 
 ### F3-01M
 - Text: Metadata includes the identifier for the data
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: All data in BioConnect are connected to an assay, which is always connected to a study. Data always travel with their metadata, and the metadata always includes the identifier for the data. 
+BioConnect uses the RO-Crate package format for data export, which includes a linked data (JSON-LD) metadata file. When exporting a data package from BioConnect, the RO-Crate metadata file includes the identifier of each data file (via "hasPart"), and that identifier is linked to all of the metadata via a linked data graph.
+- Gap: N/A
+- Recommendation: N/A
 
 ## F4
 
 ### F4-01M
 - Text: Metadata is offered in such a way that it can be harvested and indexed
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: Study based RO-Crate data packages can be exported from BioConnect, and these packages include metadata in a standard format (JSON-LD) that can be harvested and indexed by search engines and other data discovery tools.
+- Gap: The BioConnect API end points that serve metadata are not designed to be harvested and indexed by search engines or other data discovery tools. In addition, the end points require authentication, which makes it difficult for search engines to access the metadata.
+However, 
+- Recommendation: To fully comply with this principle, metadata that have been shared publicly should be made available through open API end points that are designed to be harvested and indexed by data discovery tools. This end points should not require authentication, and should be designed to support content negotiation so that metadata can be accessed in both human readable and machine readable formats. Metadata should be served in a standard format (JSON-LD/RDF).
+Additionally, an RO-Crate data package repository could be implemented to support harvesting and indexing metadata. Because RO-Crate metadata are in a standard JSON-LD format, they lend themselves to data discovery. An example of this is WorkflowHub.
 
 ---
 
