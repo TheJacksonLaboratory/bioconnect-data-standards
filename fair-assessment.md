@@ -79,58 +79,60 @@ Additionally, an RO-Crate data package repository could be implemented to suppor
 ### A1-01M
 - Text: Metadata contains information to enable the user to get access to the data
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: Data are always associated with a study. Studies are access controlled using Fine Grained Authorization (FGA). So we are capturing access control rules in the metadata. In addition, study contacts (along with their roles) are included in the metadata, which provides users with information about who to contact to request access to the data.
+- Gap: Though metadata captures access control rules, BioConnect users must have at least read access to the study in order to view the metadata. This means that users cannot access metadata for studies that they do not have access to, and therefore cannot determine whether they should request access to the data.
+- Recommendation: To fully comply with this principle, at least some study metadata should be made available to users even if they do not have access to the underlying data. This could be achieved by providing a summary version of the metadata that includes only high level information such as study title and contacts. 
 
 ### A1-02M
 - Text: Metadata can be accessed manually (i.e. with human intervention)
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Metadata can be accessed manually through the BioConnect user interface, which allows users to view and download metadata for studies they have access to. For example, after logging in, users can view study metadata by navigating to the study detail page, and they can download metadata in RO-Crate format from the same page.
+- Gap: N/A
+- Recommendation: N/A
 
 ### A1-02D
 - Text: Data can be accessed manually (i.e. with human intervention)
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Data are inlcuded, along with their metadata, in RO-Crate data packages that can be downloaded through the BioConnect user interface.
+- Gap: N/A
+- Recommendation: N/A
 
 ### A1-03M
 - Text: Metadata identifier resolves to a metadata record
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: We are generating an identifier for each individual metadata record in a study when generating a data package. These identifiers resolve to a human readable HTML page that displays the metadata record. For example:
+https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
+- Gap: Though this is implemented for data package exports, the identifiers are generated on the fly and have dependencies that mean they are not stable over time. In addition, the identifiers do not resolve to a machine readable metadata record, which is necessary for programmatic access to the metadata.
+- Recommendation: To fully comply with this principle, we need to implement a stable identifier scheme for metadata records. Each record (studies, assays, contacts, samples, etc) should be "born" with a permanent, unique http URI. This URI can be used from anywhere to dereference the object in either human or machine readable format. Uniqueness should be based on a dedicated root URL in combination with an entity type and a GUID. These URIs should resolve to both human readable HTML pages and machine readable metadata records (depending on content negotiation).
 
 ### A1-03D
 - Text: Data identifier resolves to a digital object
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: Data files in BioConnect are either stored in a BioConnect Google Cloud Storage bucket or are referenced by an external URL. In either case, the identifier for a data file does not resolve to the data file itself, but rather to a human readable HTML page that provides information about the data file and includes a link to download the data file. For example:
+https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157530
+- Gap: The identifiers do not resolve to the data file itself, which is necessary for programmatic access to the data. In addition, the identifiers are generated on the fly and have dependencies that mean they are not stable over time.
+- Recommendation: The Software and Platforms team is currently evaluating the [Data Repository Service (DRS)](https://www.ga4gh.org/product/data-repository-service-drs/) as a potential solution for serving data files across JDS. If implemented, this service would provide stable, resolvable identifiers for data files and handle file retrieval.
 
 ### A1-04M
 - Text: Metadata is accessed through standardised protocol
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: All BioConnect metadata is available via the BioConnect API, which is a RESTful API that serves metadata over https.
+- Gap: N/A
+- Recommendation: N/A
 
 ### A1-04D
 - Text: Data is accessible through standardised protocol
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Data files in BioConnect are either stored in a BioConnect Google Cloud Storage bucket or are referenced by an external URL. In either case, data files can be accessed through standardised protocols (either https or gsutil).
+- Gap: N/A
+- Recommendation: N/A
 
 ### A1-05D
 - Text: Data can be accessed automatically (i.e. by a computer program)
