@@ -42,6 +42,10 @@ For each Scientific Service core, we will use a common implementation process to
 6. **Adopt and operationalize.** Finalize the workflow, train participants, and put the solution into routine use as the standard approach for that service.
 7. **Monitor and improve.** Evaluate adoption, data quality, and usability over time, and make incremental improvements as service needs and research workflows evolve. 
 
+A summary of the process for each service is shown in the following graphic. 
+
+![Process development for each service](images/per-service-process.png)
+
 This phased approach will help ensure that each service integration is practical, standards-aligned, and sustainable, while contributing to a broader FAIR data ecosystem across JAX. 
 
 ## BioConnect
