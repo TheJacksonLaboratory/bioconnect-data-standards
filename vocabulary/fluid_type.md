@@ -8,7 +8,7 @@ label: cerebrospinal fluid
 description: A clear, colorless, bodily fluid that occupies the subarachnoid space
   and the ventricular system around and inside the brain and spinal cord.
 parent: fluid_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -24,7 +24,7 @@ label: media
 description: The physical state or matrix used to provide nutrients to the organism
   (e.g., liquid, agar, soil).
 parent: fluid_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -39,7 +39,7 @@ id: plasma
 label: plasma
 description: The liquid component of blood, in which erythrocytes are suspended.
 parent: fluid_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -54,7 +54,7 @@ id: serum
 label: serum
 description: The portion of blood plasma that excludes clotting factors.
 parent: fluid_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -69,7 +69,7 @@ id: urine
 label: urine
 description: Excretion that is the output of a kidney.
 parent: fluid_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:

@@ -7,7 +7,7 @@ id: assay_for_transposase_accessible_chromatin_using_sequencing
 label: assay for transposase-accessible chromatin using sequencing
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -22,7 +22,7 @@ id: chip_seq_assay
 label: ChIP-seq assay
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -37,7 +37,7 @@ id: ddradseq
 label: ddRADseq
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -52,7 +52,7 @@ id: dna_fragmentation
 label: DNA Fragmentation
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -67,7 +67,7 @@ id: elisa
 label: ELISA
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -82,7 +82,7 @@ id: hi_c_assay
 label: Hi-C assay
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -97,7 +97,7 @@ id: long_read_sequencing
 label: Long Read Sequencing
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -112,7 +112,7 @@ id: metabolites_measurement
 label: metabolites measurement
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -127,7 +127,7 @@ id: nucleic_acid_extraction
 label: nucleic acid extraction
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -142,7 +142,7 @@ id: protein_profiling_assay
 label: protein profiling assay
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -157,7 +157,7 @@ id: transcription_profiling_assay
 label: transcription profiling assay
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -172,7 +172,7 @@ id: western_blotting
 label: western blotting
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -187,7 +187,7 @@ id: whole_genome_sequencing
 label: Whole Genome Sequencing
 description:
 parent: measurement_type
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:

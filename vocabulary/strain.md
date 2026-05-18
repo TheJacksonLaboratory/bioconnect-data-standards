@@ -7,7 +7,7 @@ id: c57bl_6j
 label: C57BL/6J
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -22,7 +22,7 @@ id: cc003_x_cc004
 label: CC003 X CC004
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -37,7 +37,7 @@ id: cc004_x_cc041
 label: CC004 X CC041
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -52,7 +52,7 @@ id: cc006_x_cc003
 label: CC006 X CC003
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -67,7 +67,7 @@ id: cc010_x_cc006
 label: CC010 X CC006
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -82,7 +82,7 @@ id: cc019_x_cc032
 label: CC019 X CC032
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -97,7 +97,7 @@ id: cc032_x_cc040
 label: CC032 X CC040
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -112,7 +112,7 @@ id: cc040_x_cc010
 label: CC040 X CC010
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -127,7 +127,7 @@ id: cc041_x_cc019
 label: CC041 X CC019
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -142,7 +142,7 @@ id: cc080_tauuncj
 label: CC080/TauUncJ
 description:
 parent: strain
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:

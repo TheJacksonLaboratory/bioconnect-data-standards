@@ -7,7 +7,7 @@ id: female
 label: female
 description: A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.
 parent: sex
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -22,7 +22,7 @@ id: male
 label: male
 description: A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.
 parent: sex
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -37,7 +37,7 @@ id: unknown
 label: unknown
 description:
 parent: sex
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []

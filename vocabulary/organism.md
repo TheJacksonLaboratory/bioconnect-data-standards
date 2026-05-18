@@ -7,7 +7,7 @@ id: callithrix_jacchus
 label: Callithrix jacchus
 description:
 parent: organism
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -22,7 +22,7 @@ id: drosophila_melanogaster
 label: Drosophila melanogaster
 description:
 parent: organism
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -36,7 +36,7 @@ id: homo_sapiens
 label: Homo sapiens
 description:
 parent: organism
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -51,7 +51,7 @@ id: mus_musculus
 label: Mus musculus
 description:
 parent: organism
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:

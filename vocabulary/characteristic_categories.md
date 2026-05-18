@@ -7,7 +7,7 @@ id: cell_type
 label: cell type
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -22,7 +22,7 @@ id: fluid_type
 label: fluid type
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -37,7 +37,7 @@ id: organism
 label: organism
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -52,7 +52,7 @@ id: sample_buffer
 label: sample buffer
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -67,7 +67,7 @@ id: sample_type
 label: sample type
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -82,7 +82,7 @@ id: sex
 label: sex
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -97,7 +97,7 @@ id: strain
 label: strain
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -112,7 +112,7 @@ id: tissue
 label: tissue
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:
@@ -127,7 +127,7 @@ id: treatment
 label: treatment
 description:
 parent: characteristic_category
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings:

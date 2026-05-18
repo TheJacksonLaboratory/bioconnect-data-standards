@@ -7,7 +7,7 @@ id: 10_dmso_in_dmem
 label: 10% DMSO in DMEM
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -20,7 +20,7 @@ id: 100_ethanol
 label: 100% Ethanol
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -33,7 +33,7 @@ id: 50mM_ammonium_bicarbonate
 label: 50 mM Ammonium Bicarbonate
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -46,7 +46,7 @@ id: 50mM_hepes_6M_urea
 label: 50 mM HEPES, 6M Urea
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -59,7 +59,7 @@ id: 95_ethanol
 label: 95% Ethanol
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -72,7 +72,7 @@ id: buffer_ae_qiagen
 label: Buffer AE (Qiagen)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -85,7 +85,7 @@ id: cell_culture_media_unspecified
 label: Cell Culture Media (unspecified)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -98,7 +98,7 @@ id: cmrl_medium
 label: CMRL Medium
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -111,7 +111,7 @@ id: dmso
 label: DMSO
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -124,7 +124,7 @@ id: dna_purification_elution_buffer_specify
 label: DNA Purification Elution Buffer (specify) *
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -137,7 +137,7 @@ id: dnarna_shield
 label: DNA/RNA Shield
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -150,7 +150,7 @@ id: elution_buffer_eb_10_mm_tris_cl_ph_85
 label: Elution Buffer EB (10 mM Tris-Cl, pH 8.5)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -163,7 +163,7 @@ id: ethanol_unspecified_concentration
 label: Ethanol (unspecified concentration) *
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -176,7 +176,7 @@ id: illumina_rsb_resuspension_buffer
 label: Illumina RSB (Resuspension Buffer)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -189,7 +189,7 @@ id: low_te_10_mm_tris_01_mm_edta_ph_75
 label: Low TE (10 mM Tris, 0.1 mM EDTA, pH 7.5)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -202,7 +202,7 @@ id: lysis_buffer_specify
 label: Lysis Buffer (specify)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -215,7 +215,7 @@ id: na_no_buffer
 label: N/A - No Buffer
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -228,7 +228,7 @@ id: neb_elution_buffer
 label: NEB Elution Buffer
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -241,7 +241,7 @@ id: none_snap_frozen
 label: None / Snap Frozen
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -254,7 +254,7 @@ id: oracollect_dx
 label: ORAcollect Dx
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -267,7 +267,7 @@ id: other_specify_in_comments
 label: Other (specify in Comments)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -279,7 +279,7 @@ id: pbs_phosphate_buffered_saline
 label: PBS (Phosphate-Buffered Saline)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -292,7 +292,7 @@ id: rlt_plus_beta_mercaptoethanol_qiagen
 label: RLT Plus + β-Mercaptoethanol (Qiagen)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -305,7 +305,7 @@ id: rnalater
 label: RNAlater
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -318,7 +318,7 @@ id: rnase_free_water
 label: RNase-free Water
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -330,7 +330,7 @@ id: stemflex_medium
 label: StemFlex Medium
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -343,7 +343,7 @@ id: te_buffer_10_mm_tris_1_mm_edta_ph_80
 label: TE Buffer (10 mM Tris, 1 mM EDTA, pH 8.0)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -356,7 +356,7 @@ id: tris_hcl_10_mm_ph_80
 label: Tris-HCl (10 mM, pH 8.0)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -369,7 +369,7 @@ id: trizol
 label: TRIzol
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -382,7 +382,7 @@ id: water_ddh2o
 label: Water (ddH2O)
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
@@ -395,7 +395,7 @@ id: zymo_dna_elution_buffer
 label: Zymo DNA Elution Buffer
 description:
 parent: sample_buffer
-status:
+status: proposed
 notes:
 related_to: []
 external_mappings: []
