@@ -66,8 +66,7 @@ BioConnect uses the RO-Crate package format for data export, which includes a li
 - Score: 1
 - Evidence: Study based RO-Crate data packages can be exported from BioConnect, and these packages include metadata in a standard format (JSON-LD) that can be harvested and indexed by search engines and other data discovery tools.
 - Gap: The BioConnect API end points that serve metadata are not designed to be harvested and indexed by search engines or other data discovery tools. In addition, the end points require authentication, which makes it difficult for search engines to access the metadata.
-However, 
-- Recommendation: To fully comply with this principle, metadata that have been shared publicly should be made available through open API end points that are designed to be harvested and indexed by data discovery tools. This end points should not require authentication, and should be designed to support content negotiation so that metadata can be accessed in both human readable and machine readable formats. Metadata should be served in a standard format (JSON-LD/RDF).
+- Recommendation: To fully comply with this principle, metadata that have been shared publicly should be made available through open API end points that are designed to be harvested and indexed by data discovery tools. These end points should not require authentication, and should be designed to support content negotiation so that metadata can be accessed in both human readable and machine readable formats. Metadata should be served in a standard format (JSON-LD/RDF).
 Additionally, an RO-Crate data package repository could be implemented to support harvesting and indexing metadata. Because RO-Crate metadata are in a standard JSON-LD format, they lend themselves to data discovery. An example of this is WorkflowHub.
 
 ---
