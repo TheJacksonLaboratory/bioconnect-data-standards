@@ -1,4 +1,5 @@
 # FAIR Data Maturity Model Assessment for BioConnect
+This assessment is based on the [FAIR Data Maturity Model](https://www.rd-alliance.org/system/files/FAIR%20Data%20Maturity%20Model_%20specification%20and%20guidelines_v0.90.pdf), which provides a framework for evaluating the FAIRness of data and metadata. The assessment is organized according to the four FAIR principles: Findable, Accessible, Interoperable, and Reusable. Each principle is further broken down into specific criteria, which are evaluated based on evidence from the BioConnect application. The assessment includes scores for each criterion, as well as identified gaps and recommendations for improvement.
 
 # 1. Findable (F)
 
@@ -136,20 +137,21 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157530
 ### A1-05D
 - Text: Data can be accessed automatically (i.e. by a computer program)
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: When BioConnect builds a data package, the API uses the jax-cs-storage library to download assay data files using the file metadata. Each ISA Data records is optionally attached to a stored file record, which represents a data file in the BioConnect Google Cloud Storage bucket. If a data file is attached to the ISA Data record, then the API can use the jax-cs-storage library to download the data file and include it in the data package. However, this functionality is currently only implemented for data package exports, and is not available through a standardised protocol that can be accessed by external programs.
+Some Data records represent external data files that are not stored in the BioConnect Google Cloud Storage bucket. In this case, the Data record includes a URL that points to the external data file. However, there is no standardised protocol for accessing these external data files, and the URLs may not be stable over time.
+- Gap: Applications external to BioConnect cannot download files on a machine to machine basis.
+- Recommendation: Integrate BioConnect with the Data Repository Service (DRS) to provide stable, resolvable URLs and programmatic access to data files.
 
 ## A1.1
 
 ### A1.1-01M
 - Text: Metadata is accessible through a free access protocol
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Metadata in BioConnect are available via HTTPS protocols, which means there is no cost to access the metadata. However, users must have at least read access to the metadata in order to retrieve it.
+- Gap: N/A
+- Recommendation: N/A
 
 ### A1.1-01D
 - Text: Data is accessible through a free access protocol
@@ -164,20 +166,20 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157530
 ### A1.2-02D
 - Text: Data is accessible through an access protocol that supports authentication and authorisation
 - Priority: Useful
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: All requests for data go through HTTPS end points that require an Auth0 access token. This access token is validated and used to do a check request to the Fine Grained Authorization (FGA) service to determine whether the user has access to the data. If the user has access, then the data is returned. If the user does not have access, then an error is returned.
+- Gap: N/A
+- Recommendation: N/A
 
 ## A2
 
 ### A2-01M
 - Text: Metadata is guaranteed to remain available after data is no longer available
 - Priority: Essential
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 0
+- Evidence: N/A
+- Gap: Metadata for a data record in BioConnect is deleted when the data record is deleted. There is currently no mechanism to ensure that metadata remains available after the data is no longer available.
+- Recommendation: To comply with this indicator, the Data Assets team has designed a PID (Persistent Identifier) service that will mint and manage persistent identifiers for metadata records. This service will store metadata permanently to ensure that metadata records remain available even if the underlying data file is deleted. When a data record gets created, its metadata will be conveyed to the PID service, which will store it and return a PID. From that point on, the PID will always be resolvable to the metadata record, even if the underlying data is deleted. Deleted data records' PIDs will come with a status to indicate that it has been deleted (aka "tombstone" record).
 
 ---
 
@@ -188,18 +190,18 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157530
 ### I1-01M
 - Text: Metadata uses knowledge representation expressed in standardised format
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Metadata in BioConnect adheres to a community standard schema: the ISA (Investigation, Study, Assay) model. This schema is widely used in the life sciences domain and provides a structured way to represent metadata about studies, assays, samples, and data files. By using this standardized format, BioConnect metadata can be more easily understood and used by other applications and researchers. A standard schema makes the metadata more interoperable because it provides a common structure and vocabulary for representing metadata across different systems and applications. In addition, the ISA model allows for almost any entity to be annotated with ontology terms, and the BioConnect curation UI supports the management of a standard set of ontology and vocabulary terms. Professional curators maintain the list of controlled terms and carefully manage the ontology sources used to annotate metadata.
+- Gap: N/A
+- Recommendation: N/A
 
 ### I1-01D
 - Text: Data uses knowledge representation expressed in standardised format
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Where applicable, data files in BioConnect are defined using the Frictionless Data standard, which means that each column in a tabular data file is defined with metadata that describes the column name, description, data type, format, min/max values and other information relevant to analysis of the file. In addition, when a user downloads data from BioConnect, the data come in an RO-Crate data package. RO-Crate is a standard format for packaging data and metadata together, and includes a JSON-LD metadata file that describes the data files and metadata in the package. If any of the data files is mapped to a Frictionless Data definition, this is included in the data package.
+- Gap: N/A
+- Recommendation: N/A
 
 ### I1-02M
 - Text: Metadata uses machine-understandable knowledge representation
