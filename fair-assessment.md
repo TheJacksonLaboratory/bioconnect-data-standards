@@ -9,16 +9,15 @@ This assessment is based on the [FAIR Data Maturity Model](https://www.rd-allian
 - Text: Metadata is identified by a persistent identifier
 - Priority: Essential
 - Score: 1
-- Evidence: When packaging metadata in an RO-Crate, we assign an identifier to each metadata object. This is used to identifiy the object in the package, and resolves to a human readable HTML page. For example:
-https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
-- Gap: The identifier is dependent on a specific angular route in the front end BioConnect application. These identifiers should be independent of a specific application or front end route in order to be truly persistent.
-- Recommendation: Jax/JDS needs to commit to a persistant root URL domain and the infrastructure to support minting and serving persistent identifiers. The root URL and infrastructure should be stable over the coming years so that data remain findable. The identifier should be a URL resolvable to a human readable HTML page or machine readable response (depending on content negotiation).
+- Evidence: The Data Assets team has designed a Persistent Identifier (PID) service that will mint and manage persistent identifiers for metadata records. This service will store metadata permanently to ensure that metadata records remain available even if the underlying entity is deleted. When a metadata record gets created, it will be conveyed to the PID service, which will store it and return a PID. From that point on, the PID will always be resolvable to the metadata record, even if the underlying data is deleted. Deleted metadata records' PIDs will come with a status to indicate that it has been deleted.
+- Gap: BioConnect currently assigns a metadata identifier for each entity in a data package, but these identifiers are generated on the fly and have dependencies that mean they are not stable over time. They are dependent on speficic environments and are dependent on a specific front end route that could change over time.
+- Recommendation: Implement the PID service as designed.
 
 ### F1-01D
 - Text: Data is identified by a persistent identifier
 - Priority: Essential
 - Score: 1
-- Evidence: Same as F1-01M. Example: data/157088
+- Evidence: Similar to F1-01M. The PID service will also mint and manage persistent identifiers for data records.
 - Gap: Same as F1-01M
 - Recommendation: Same as F1-01M
 
@@ -26,15 +25,16 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
 - Text: Metadata is identified by a globally unique identifier
 - Priority: Essential
 - Score: 1
-- Evidence: The identifer assigned to metadata objects in BioConnect is globally unique in that it is constructed using the entity type and entity primary key. The combination of these two values and the bioconnect domain is guaranteed to be unique. 
-- Gap: As with F1-01M, the identifier is dependent on a specific angular route in the front end BioConnect application. These identifiers should be independent of a specific application or front end route in order to be truly globally unique. In addition, the identifier is also dependent on the environmennt. For example, the identifier for a metadata object in the DEV environment is different from the identifier for the same metadata object in the PRD environment, because the root url is different.
-- Recommendation: Implement a globally unique identifier scheme for metadata objects that is independent of the front end application and independent of environment (eg DEV, SQA, PRD). Uniqueness should be based on a dedicated root URL in combination with an entity type and an ID that is unique within the context of the entity type.
+- Evidence: The proposed PID service will mint globally unique identifiers, regardless of entity type.
+- Gap: The identifers currently assigned to metadata objects in a BioConnect data package are globally unique in that they are constructed using the entity type and entity primary key. The combination of these two values and the bioconnect domain is guaranteed to be unique. But as with F1-01M, the identifier is dependent on a specific route in the front end BioConnect application. These identifiers should be independent of a specific application or front end route in order to be truly globally unique. In addition, the identifier is also dependent on the environmennt. For example, the identifier for a metadata object in the DEV environment is different from the identifier for the same metadata object in the PRD environment, because the root url is different.
+- Recommendation: Implement the PID service as designed.
+
 
 ### F1-02D
 - Text: Data is identified by a globally unique identifier
 - Priority: Essential
 - Score: 1
-- Evidence: Same as F1-02M. Example: /data/157088
+- Evidence: Same as F1-02M. The PID service will mint globally unique identifiers for data records.
 - Gap: Same as F1-02M
 - Recommendation: Same as F1-02M
 
@@ -53,11 +53,10 @@ https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
 ### F3-01M
 - Text: Metadata includes the identifier for the data
 - Priority: Essential
-- Score: 3
-- Evidence: All data in BioConnect are connected to an assay, which is always connected to a study. Data always travel with their metadata, and the metadata always includes the identifier for the data. 
-BioConnect uses the RO-Crate package format for data export, which includes a linked data (JSON-LD) metadata file. When exporting a data package from BioConnect, the RO-Crate metadata file includes the identifier of each data file (via "hasPart"), and that identifier is linked to all of the metadata via a linked data graph.
+- Score: 2
+- Evidence: All data in BioConnect are connected to an assay, which is always connected to a study. Data always travel with their metadata, and the metadata always includes the identifier for the data. BioConnect uses the RO-Crate package format for data export, which includes a linked data (JSON-LD) metadata file. When exporting a data package from BioConnect, the RO-Crate metadata file includes the identifier of each data file (via "hasPart"), and that identifier is linked to all of the metadata via a linked data graph.
 - Gap: N/A
-- Recommendation: N/A
+- Recommendation: Once the PID service is implemented, the metadata should be updated to include the persistent identifier for each data record. This will ensure that the metadata includes a stable identifier for the data that can be used for discovery and access.
 
 ## F4
 
@@ -104,19 +103,18 @@ Additionally, an RO-Crate data package repository could be implemented to suppor
 - Text: Metadata identifier resolves to a metadata record
 - Priority: Essential
 - Score: 1
-- Evidence: We are generating an identifier for each individual metadata record in a study when generating a data package. These identifiers resolve to a human readable HTML page that displays the metadata record. For example:
+- Evidence: We are currently generating an identifier for each individual metadata record in a study when generating a data package. These identifiers resolve to a human readable HTML page that displays the metadata record. For example:
 https://bioconnect.jax.org/search/metadata-search-browse/detail-view/study/757
 - Gap: Though this is implemented for data package exports, the identifiers are generated on the fly and have dependencies that mean they are not stable over time. In addition, the identifiers do not resolve to a machine readable metadata record, which is necessary for programmatic access to the metadata.
-- Recommendation: To fully comply with this principle, we need to implement a stable identifier scheme for metadata records. Each record (studies, assays, contacts, samples, etc) should be "born" with a permanent, unique http URI. This URI can be used from anywhere to dereference the object in either human or machine readable format. Uniqueness should be based on a dedicated root URL in combination with an entity type and a GUID. These URIs should resolve to both human readable HTML pages and machine readable metadata records (depending on content negotiation).
+- Recommendation: To fully comply with this principle, we will implement the PID service. Each record (studies, assays, contacts, samples, etc) will be "born" with a permanent, unique PID. This PID is a URL that can be used from anywhere to dereference the object in either human or machine readable format. Uniqueness should be based on a dedicated root URL in combination with a globally unique token. These URIs should resolve to both human readable HTML pages and machine readable metadata records (depending on content negotiation).
 
 ### A1-03D
 - Text: Data identifier resolves to a digital object
 - Priority: Essential
 - Score: 1
-- Evidence: Data files in BioConnect are either stored in a BioConnect Google Cloud Storage bucket or are referenced by an external URL. In either case, the identifier for a data file does not resolve to the data file itself, but rather to a human readable HTML page that provides information about the data file and includes a link to download the data file. For example:
-https://bioconnect.jax.org/search/metadata-search-browse/detail-view/data/157530
+- Evidence: Data files in BioConnect are either stored in a BioConnect Google Cloud Storage bucket or are referenced by an external URL. In either case, the identifier for a data file does not resolve to the data file itself, but rather to a human readable HTML page that provides information about the data file and includes a link to download the data file.
 - Gap: The identifiers do not resolve to the data file itself, which is necessary for programmatic access to the data. In addition, the identifiers are generated on the fly and have dependencies that mean they are not stable over time.
-- Recommendation: The Software and Platforms team is currently evaluating the [Data Repository Service (DRS)](https://www.ga4gh.org/product/data-repository-service-drs/) as a potential solution for serving data files across JDS. If implemented, this service would provide stable, resolvable identifiers for data files and handle file retrieval.
+- Recommendation: The Software and Platforms team is currently implementing the [Data Repository Service (DRS)](https://www.ga4gh.org/product/data-repository-service-drs/) as a solution for serving data files across JDS. This service will provide resolvable identifiers for data files and handle file retrieval. The PID service will assign a persistent identifier for the file metadata, and the DRS service will assign a URL for file retrieval. The DRS URL will be included in the data record metadata.
 
 ### A1-04M
 - Text: Metadata is accessed through standardised protocol
@@ -199,60 +197,60 @@ Some Data records represent external data files that are not stored in the BioCo
 - Text: Data uses knowledge representation expressed in standardised format
 - Priority: Important
 - Score: 3
-- Evidence: Where applicable, data files in BioConnect are defined using the Frictionless Data standard, which means that each column in a tabular data file is defined with metadata that describes the column name, description, data type, format, min/max values and other information relevant to analysis of the file. In addition, when a user downloads data from BioConnect, the data come in an RO-Crate data package. RO-Crate is a standard format for packaging data and metadata together, and includes a JSON-LD metadata file that describes the data files and metadata in the package. If any of the data files is mapped to a Frictionless Data definition, this is included in the data package.
+- Evidence: Where applicable, data files in BioConnect are defined using the [Frictionless Data standard](https://frictionlessdata.io/) (see I1-02D below). BioConnect provides a user friendly interface for building Frictionless file definitions, including the ability to import an existing file as the basis for a file type definition. In addition, when a user downloads data from BioConnect, the data come in an [RO-Crate data package](https://www.researchobject.org/ro-crate/). RO-Crate is a standard format for packaging data and metadata together, and includes a JSON-LD metadata file that describes the data files and metadata in the package.
 - Gap: N/A
 - Recommendation: N/A
 
 ### I1-02M
 - Text: Metadata uses machine-understandable knowledge representation
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: When downloading a data package from BioConnect, the RO-Crate data package includes a JSON-LD metadata file that describes the data files and metadata in the package. This file is human and machine readable JSON-LD per the RO-Crate specification. 
+- Gap: Though the RO-Crate metadata file itself is machine readable, not all of the metadata in BioConnect is currently available in a machine readable format.
+- Recommendation: Once the PID service is implemented, all metadata should be updated to include the persistent identifier for each record. This will ensure that all metadata records have a stable identifier that can be used in a machine readable way to support a linked data ecosystem. PIDs will be used to reference metadata in the RO-Crate metadata file, making it fully machine readable.
 
 ### I1-02D
 - Text: Data uses machine-understandable knowledge representation
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Using the Frictionless Data standard, each column in a tabular data file is defined with metadata that describes the column name, description, data type, format, min/max values and other information relevant to analysis of the file. Columns are mapped via rdf_type to machine readable objects such as ontology annotation accession URLs, making the data compatible with linked data standards. If any of the data files is mapped to a Frictionless Data definition, the Frictionless resource is included in the data package. The RO-Crate metadata for the file includes a "conformsTo" property that machines can use to infer the structure and format of the data file from the Frictionless resource.
+- Gap: N/A
+- Recommendation: N/A
 
 ## I2
 
 ### I2-01M
 - Text: Metadata uses FAIR-compliant vocabularies
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: BioConnect metadata can be annotated with ontology terms from any ontology source (eg UBERON, EFO). However, not all terms are FAIR compliant. The Data Assets team is currently working on designing an application ontology for use within the JDS ecosystem. The application ontology design is based on "Ten simple rules for making a vocabulary FAIR" (https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009041). Once the application ontology is implemented, we will update the BioConnect curation UI to require that metadata be annotated with terms from the application ontology. Where applicable, terms can still be mapped to external ontology terms, but the application ontology allows us to ensure that all terms are resolvable and can be used in a machine readable way that supports a linked data ecosystem.
+- Gap: The BioConnect curation UI supports the management of a standard set of ontology and vocabulary terms, though it is not required that they be linked to a FAIR compliant ontology term. Sometimes it is just a stand alone character string (eg 10% fat diet). Not all terms are resolvable or machine readable.
+- Recommendation: Implement the application ontology service.
 
 ### I2-01D
 - Text: Data uses FAIR-compliant vocabularies
 - Priority: Useful
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 1
+- Evidence: Same as I2-01M
+- Gap: Same as I2-01M
+- Recommendation: Implement the application ontology service.
 
 ## I3
 
 ### I3-01M
 - Text: Metadata includes references to other metadata
 - Priority: Important
-- Score:
-- Evidence:
-- Gap:
-- Recommendation:
+- Score: 3
+- Evidence: Because BioConnect leverages the ISA model, all metadata records are connected to each other. For example, a study record is connected to one or more assays, and data files are linked to assays. When exported in an RO-Crate data package, these relationships form a linked data graph.
+- Gap: N/A
+- Recommendation: N/A
 
 ### I3-01D
 - Text: Data includes references to other data
 - Priority: Useful
-- Score:
-- Evidence:
-- Gap:
+- Score: 2
+- Evidence: Data files are attached to assays, and assays contain a process sequence. Each proces sequence has a set of inputs and outputs. Data files may be used as inputs or outputs in the process sequence, which creates a reference from one file to another via a process. For example, a process might represent running a script that transforms raw data to derived data. The raw data file would be an input to the process, and the derived data file would be an output of the process. These references are carried through to the machine readable RO-Crate metadata file. In addition, Frictionless Data definitions can be used to indicate that one column is the source of another column within a file.
+- Gap: Because BioConnect does not manage data within the file itself, it does not currently support internal referrences with the data.
 - Recommendation:
 
 ### I3-02M
