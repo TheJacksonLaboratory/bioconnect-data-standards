@@ -1,6 +1,12 @@
 # FAIR Data Maturity Model Assessment for BioConnect
 This assessment is based on the [FAIR Data Maturity Model](https://www.rd-alliance.org/system/files/FAIR%20Data%20Maturity%20Model_%20specification%20and%20guidelines_v0.90.pdf), which provides a framework for evaluating the FAIRness of data and metadata. The assessment is organized according to the four FAIR principles: Findable, Accessible, Interoperable, and Reusable. Each principle is further broken down into specific criteria, which are evaluated based on evidence from the BioConnect application. The assessment includes scores for each criterion, as well as identified gaps and recommendations for improvement.
 
+Using a numeric scoring system will give us a quantifiable metric that we can use to track progress and score the system over all. The scoring scale is:
+- 0-> Not met
+- 1-> Partially met
+- 2-> Mostly met
+- 3-> Fully met
+
 # 1. Findable (F)
 
 ## F1
