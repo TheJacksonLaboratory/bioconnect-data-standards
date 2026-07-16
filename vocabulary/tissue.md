@@ -1,5 +1,7 @@
 # Tissue Vocabulary
 
+**Definition:** Tissue is the anatomical tissue source or tissue-derived material associated with a sample. See: [UBERON:0000479 tissue](https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON%3A0000479).
+
 ## basolateral amygdaloid nuclear complex
 
 ```yaml

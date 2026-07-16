@@ -1,5 +1,7 @@
 # Condition Treatment Vocabulary
 
+**Definition:** Treatment is an intervention, exposure, or condition applied with the intent to modify or alter a characteristic of an organism, individual, sample, or experimental system. See: [EFO:0000727 treatment](https://www.ebi.ac.uk/ols4/api/ontologies/efo/terms?obo_id=EFO%3A0000727).
+
 ## Arsenic
 
 ```yaml

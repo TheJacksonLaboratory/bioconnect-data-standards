@@ -1,5 +1,7 @@
 # Fluid Type Vocabulary
 
+**Definition:** Fluid Type is the liquid biological material or fluid medium associated with a sample; organism-derived fluids. See: [UBERON:0006314 bodily fluid](https://www.ebi.ac.uk/ols4/api/ontologies/uberon/terms?obo_id=UBERON%3A0006314).
+
 ## cerebrospinal fluid
 
 ```yaml

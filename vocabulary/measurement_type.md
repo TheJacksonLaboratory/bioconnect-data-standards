@@ -1,5 +1,7 @@
 # Measurement Type Vocabulary
 
+**Definition:** Measurement Type is the assay or other measurement-generating process used to produce information about a sample or material entity. See: [OBI:0000070 assay](https://www.ebi.ac.uk/ols4/api/ontologies/obi/terms?obo_id=OBI%3A0000070).
+
 ## assay for transposase-accessible chromatin using sequencing
 
 ```yaml
