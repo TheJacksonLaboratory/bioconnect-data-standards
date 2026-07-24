@@ -1,5 +1,7 @@
 # Sex Vocabulary
 
+**Definition:** Sex is the biological sex quality recorded for an organism or population. See: [PATO:0000047 biological sex](https://www.ebi.ac.uk/ols4/api/ontologies/pato/terms?obo_id=PATO%3A0000047).
+
 ## female
 
 ```yaml

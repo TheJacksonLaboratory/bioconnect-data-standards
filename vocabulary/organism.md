@@ -1,5 +1,7 @@
 # Organism Vocabulary
 
+**Definition:** Organism is the biological entity or taxon from which a sample, specimen, or observation is derived. See: [CARO:0001010 organism](https://www.ebi.ac.uk/ols4/api/ontologies/caro/terms?obo_id=CARO%3A0001010).
+
 ## Callithrix jacchus
 
 ```yaml

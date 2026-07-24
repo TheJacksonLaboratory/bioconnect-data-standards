@@ -1,5 +1,7 @@
 # Cell Type Vocabulary
 
+**Definition:** Cell Type is the cellular identity recorded for a sample or observation, using cell classes. See: [CL:0000000 cell](https://www.ebi.ac.uk/ols4/api/ontologies/cl/terms?obo_id=CL%3A0000000).
+
 ## bone marrow-derived macrophage
 
 ```yaml

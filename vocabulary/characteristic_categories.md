@@ -1,5 +1,7 @@
 # Characteristic Category Vocabulary
 
+**Definition:** Characteristic Category is a grouping for the kinds of sample, subject, or experimental characteristics captured by this vocabulary; where the characteristic is a dependent property. See: [PATO:0000001 quality](https://www.ebi.ac.uk/ols4/api/ontologies/pato/terms?obo_id=PATO%3A0000001).
+
 ## cell type
 
 ```yaml
