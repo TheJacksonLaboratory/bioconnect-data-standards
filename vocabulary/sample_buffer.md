@@ -1,6 +1,6 @@
 # Sample Buffer CV Proposed Vocabulary
 
-**Definition:** Sample Buffer is the solution or reagent matrix in which a sample is suspended, preserved, lysed, stored, washed, or eluted; where applicable. See: [CHMO:0001462 buffer solution](https://www.ebi.ac.uk/ols4/api/ontologies/chmo/terms?obo_id=CHMO%3A0001462).
+**Definition:** Buffer or solution in which the sample is stored or submitted.
 
 ## 10% DMSO in DMEM
 
@@ -402,4 +402,3 @@ notes:
 related_to: []
 external_mappings: []
 ```
-

@@ -1,6 +1,6 @@
 # Strain Vocabulary
 
-**Definition:** Strain is the genetically distinct population or line of organisms within a species used to identify a biological source. See: [EFO:0005135 strain](https://www.ebi.ac.uk/ols4/api/ontologies/efo/terms?obo_id=EFO%3A0005135).
+**Definition:** Named strain or genetic background of the source organism.
 
 ## C57BL/6J
 
