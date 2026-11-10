@@ -8,7 +8,7 @@
 id: adipocyte
 label: "adipocyte"
 description: "A fat-storing cell found mostly in the abdominal cavity and subcutaneous tissue of mammals. Fat is usually stored in the form of triglycerides."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -23,7 +23,7 @@ external_mappings:
 id: adipose_tissue
 label: "adipose tissue"
 description: "Portion of connective tissue composed of adipocytes enmeshed in areolar tissue."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -38,7 +38,7 @@ external_mappings:
 id: aorta
 label: "aorta"
 description: "The main trunk of the systemic arterial system that carries blood from the heart to all the organs and other structures of the body, bringing oxygenated blood to all parts of the body in the systemic circulation."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -53,7 +53,7 @@ external_mappings:
 id: basolateral_amygdaloid_nuclear_complex
 label: "basolateral amygdaloid nuclear complex"
 description: "A set of amygdalar nuclei comprising the lateral nucleus (LA), the basal nucleus (BA), and the accessory basal nuclei (ABN). These nuclei are bordered laterally by the external capsule and medially by the central amygdalar nucleus as well as the amygdalohippocampal area. This definition refers to the rat Basolateral nuclear complex."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - definition specifically refers to rat; would it be better to use MA here? ('MA:0002921' basolateral amygdaloid nucleus)
@@ -69,7 +69,7 @@ external_mappings:
 id: blood
 label: "blood"
 description: "A fluid that is composed of blood plasma and erythrocytes."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - Consider mapping to Sample Type = tissue and Tissue = blood for consistency
@@ -86,7 +86,7 @@ external_mappings:
 id: blood_plasma
 label: "blood plasma"
 description: "The liquid component of blood, in which erythrocytes are suspended."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -101,7 +101,7 @@ external_mappings:
 id: blood_serum
 label: "blood serum"
 description: "The portion of blood plasma that excludes clotting factors."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -116,7 +116,7 @@ external_mappings:
 id: bone
 label: "bone"
 description: "A fluid that is composed of blood plasma and erythrocytes."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -131,7 +131,7 @@ external_mappings:
 id: bone_marrow
 label: "bone marrow"
 description: "The soft tissue that fills the cavities of bones."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -146,7 +146,7 @@ external_mappings:
 id: brain
 label: "brain"
 description: "The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP]."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -161,7 +161,7 @@ external_mappings:
 id: breast
 label: "breast"
 description: "The upper ventral region of the torso of an organism."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -176,7 +176,7 @@ external_mappings:
 id: brown_adipose_tissue
 label: "brown adipose tissue"
 description: "A thermogenic form of adipose tissue that is composed of brown adipocytes"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -191,7 +191,7 @@ external_mappings:
 id: buccal_swab
 label: "buccal swab"
 description: "not a biospecimen, the swab is a method"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -204,7 +204,7 @@ external_mappings: []
 id: buccal_cells
 label: "buccal cells"
 description: "An endothelial cell that lines the oral cavitiy including the mucosa of the gums, the palate, the lip, and the cheek."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -219,7 +219,7 @@ external_mappings:
 id: cardiovascular_system
 label: "cardiovascular system"
 description: "not specific enough"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -234,7 +234,7 @@ external_mappings:
 id: cecum
 label: "cecum"
 description: "A pouch in the digestive tract that connects the ileum with the ascending colon of the large intestine. It is separated from the ileum by the ileocecal valve, and is the beginning of the large intestine. It is also separated from the colon by the cecocolic junction."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -249,7 +249,7 @@ external_mappings:
 id: cerebellum
 label: "cerebellum"
 description: "Part of the metencephalon that lies in the posterior cranial fossa behind the brain stem. It is concerned with the coordination of movement"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -264,7 +264,7 @@ external_mappings:
 id: cerebral_hemisphere
 label: "cerebral hemisphere"
 description: "One of two bilateral, largely symmetrical organ subdivisions within the telencephalon which contain the cerebral cortex and cerebral white matter."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - UBERON maps to cerebral hemisphere
@@ -280,7 +280,7 @@ external_mappings:
 id: colon
 label: "colon"
 description: "A portion of the large intestine before it becomes the rectum. In mammals, the colon is the most part of the large intestine, excluding the vermiform appendix, the rectum and the anal canal."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -295,7 +295,7 @@ external_mappings:
 id: cortical_brain_organoids_cbo
 label: "cortical brain organoids (cbo)"
 description:
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -308,7 +308,7 @@ external_mappings: []
 id: cutaneous_tissue
 label: "cutaneous tissue"
 description: "Any portion of the organ that covers that body and consists of a layer of epidermis and a layer of dermis."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -323,7 +323,7 @@ external_mappings:
 id: developmental_stem_progenitor
 label: "developmental / stem & progenitor"
 description: "ambiguous"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -336,7 +336,7 @@ external_mappings: []
 id: diaphragm
 label: "diaphragm"
 description: "A thin musculomebranous barrier that separates the abdominal and thoracic cavities."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -351,7 +351,7 @@ external_mappings:
 id: digestive_hepatobiliary
 label: "digestive & hepatobiliary"
 description: "ambiguous"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -364,7 +364,7 @@ external_mappings: []
 id: ear_notch
 label: "ear notch"
 description: "move to biological material"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - Mouse  Body Part, Organ, or Organ Component; This would change to organism specific persistent IDs as needed
@@ -378,7 +378,7 @@ external_mappings: []
 id: embryo
 label: "embryo"
 description: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - how/where should embryonic timepoint be captured?
@@ -394,7 +394,7 @@ external_mappings:
 id: endoderm
 label: "endoderm "
 description: "Primary germ layer that lies remote from the surface of the embryo and gives rise to internal tissues such as gut."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -409,7 +409,7 @@ external_mappings:
 id: extraembryonic_mesenchyme
 label: "extraembryonic mesenchyme"
 description: "Mesenchyme that is part of a extraembryonic membrane."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -424,7 +424,7 @@ external_mappings:
 id: feces
 label: "feces"
 description: "Portion of semisolid bodily waste discharged through the anus"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -439,7 +439,7 @@ external_mappings:
 id: frontal_cortex
 label: "frontal cortex"
 description: "Anterior portion of the neocortex, lying anterior to the central sulcus in humans. It is bounded by the parietal cortex posteriorly and the temporal cortex laterally"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -454,7 +454,7 @@ external_mappings:
 id: gastrocnemius
 label: "gastrocnemius"
 description: "The most superficial muscle of the triceps surae group, in the posterior portion of the lower hindleg."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -469,7 +469,7 @@ external_mappings:
 id: gonadal_fat_pad
 label: "gonadal fat pad"
 description: "The encapsulated adipose tissue associated with the ovaries or testes."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -484,7 +484,7 @@ external_mappings:
 id: heart
 label: "heart"
 description: "A myogenic muscular circulatory organ found in the vertebrate cardiovascular system composed of chambers of cardiac muscle. It is the primary circulatory organ"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -499,7 +499,7 @@ external_mappings:
 id: hippocampus_ammon_s_horn
 label: "hippocampus (Ammon's horn)"
 description: "A part of the brain consisting of a three layered cortex located in the forebrain bordering the medial surface of the lateral ventricle. The term hippocampus is often used synonymously with hippocampal formation which consists of the hippocampus proper or Cornu Ammonis, the dentate gyrus and the subiculum."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -514,7 +514,7 @@ external_mappings:
 id: hypothalamus
 label: "hypothalamus"
 description: "A specialized brain region of the ventral diencephalon arising near the end of the segmentation period;"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -529,7 +529,7 @@ external_mappings:
 id: inguinal_fat_pad
 label: "inguinal fat pad"
 description: "Encapsulated adipose tissue found in the groin."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -544,7 +544,7 @@ external_mappings:
 id: islet_of_langerhans
 label: "islet of Langerhans"
 description: "The clusters of hormone-producing cells that are scattered throughout the pancreas."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -559,7 +559,7 @@ external_mappings:
 id: kidney
 label: "kidney"
 description: "A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -574,7 +574,7 @@ external_mappings:
 id: liver
 label: "liver"
 description: "An exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -589,7 +589,7 @@ external_mappings:
 id: lung
 label: "lung"
 description: "Respiration organ that develops as an outpocketing of the esophagus"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -604,7 +604,7 @@ external_mappings:
 id: mammary_gland
 label: "mammary gland"
 description: "A specialized accessory gland of the skin of mammals that secretes milk."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -619,7 +619,7 @@ external_mappings:
 id: mammary_fat_pad
 label: "mammary fat pad"
 description: "Encapsulated adipose tissue associated with the mammary gland."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -634,7 +634,7 @@ external_mappings:
 id: mandible
 label: "mandible"
 description: "A dentary bone that is the only bone in one of the lateral halves of the lower jaw skeleton."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -649,7 +649,7 @@ external_mappings:
 id: medial_prefrontal_cortex
 label: "medial prefrontal cortex"
 description: "The medial prefrontal cortex (mPFC) is a subdivision of the prefrontal cortex composed of BA12, BA25, and anterior cingulate cortex: BA32, BA33, BA24."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -664,7 +664,7 @@ external_mappings:
 id: melanoma
 label: "melanoma"
 description: "A malignant, usually aggressive tumor composed of atypical, neoplastic melanocytes."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -679,7 +679,7 @@ external_mappings:
 id: mesenteric_fat_pad
 label: "mesenteric fat pad"
 description: "Encapsulated adipose tissue associated with the mesentery."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -694,7 +694,7 @@ external_mappings:
 id: mesoderm
 label: "mesoderm"
 description: "The middle germ layer of the embryo, between the endoderm and ectoderm."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -709,7 +709,7 @@ external_mappings:
 id: mouse
 label: "mouse"
 description: "if we change this to biospecimen instead of tissue, mouse could stay in the list"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -722,7 +722,7 @@ external_mappings: []
 id: muscle
 label: "muscle"
 description: "ambiguous"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -737,7 +737,7 @@ external_mappings:
 id: osteosarcoma
 label: "osteosarcoma"
 description: "A usually aggressive malignant bone-forming mesenchymal neoplasm, predominantly affecting adolescents and young adults."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -752,7 +752,7 @@ external_mappings:
 id: ovary
 label: "ovary"
 description: "The gonad of a female organism which contains germ cells."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -767,7 +767,7 @@ external_mappings:
 id: pancreas
 label: "pancreas"
 description: "An endoderm derived structure that produces precursors of digestive enzymes and blood glucose regulating hormones."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -782,7 +782,7 @@ external_mappings:
 id: pancreatic_islet
 label: "pancreatic islet"
 description: "equivalent to islet of Langerhans"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -797,7 +797,7 @@ external_mappings:
 id: perirenal_fat
 label: "perirenal fat"
 description: "The adipose capsule of kidney (or perinephric fat or perirenal fat) is a structure between the renal fascia and renal capsule, and may be regarded as a part of the latter. A different structure, the pararenal fat, is the adipose tissue superficial to the renal fascia."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -812,7 +812,7 @@ external_mappings:
 id: placenta
 label: "placenta"
 description: "Organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -827,7 +827,7 @@ external_mappings:
 id: plasma
 label: "plasma"
 description: "use \"blood plasma\" above instead"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -842,7 +842,7 @@ external_mappings:
 id: preadipocyte
 label: "preadipocyte"
 description:
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -857,7 +857,7 @@ external_mappings:
 id: prelimbic_area
 label: "prelimbic area"
 description: "A region in the medial prefrontal cortex that is dorsal to the infralimbic area important in expression of conditioned reward and fear behaviour."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -872,7 +872,7 @@ external_mappings:
 id: primitive_syncytium
 label: "primitive syncytium"
 description: "The primitive syncytium (also called the primitive syncytiotrophoblast) is a transient, multinucleated mass of fetal tissue that forms during the earliest stages of placental development."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -885,7 +885,7 @@ external_mappings: []
 id: skeletal_muscle
 label: "skeletal muscle"
 description: "Muscle tissue that consists primarily of skeletal muscle fibers."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -900,7 +900,7 @@ external_mappings:
 id: soleus_muscle
 label: "soleus muscle"
 description: "A deep muscle of the triceps surae group, in the superficial posterior compartment of the leg."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -915,7 +915,7 @@ external_mappings:
 id: solitary_tract_nucleus_and_dorsal_motor_nucleus_of_vagus_nerve
 label: "solitary tract nucleus and dorsal motor nucleus of vagus nerve"
 description: "separate into two terms: nucleus of solitary tract (UBERON:0009050) and dorsal motor nucleus of vagus nerve (UBERON:0002870)"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -928,7 +928,7 @@ external_mappings: []
 id: spleen
 label: "spleen"
 description: "The organ that functions to filter blood and to store red corpuscles and platelets."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -943,7 +943,7 @@ external_mappings:
 id: striatum
 label: "striatum"
 description: "A region of the forebrain consisting of the caudate nucleus, putamen and fundus striati."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -958,7 +958,7 @@ external_mappings:
 id: subcutaneous_adipose_tissue
 label: "subcutaneous adipose tissue"
 description: "A portion of adipose tissue that is part of the hypodermis, beneath the dermis."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -973,7 +973,7 @@ external_mappings:
 id: tail
 label: "tail"
 description: "An external caudal extension of the body. In chordates, the tail is post-anal, in other animals the anus ends in the tail."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -988,7 +988,7 @@ external_mappings:
 id: testis
 label: "testis"
 description: "Gonad of a male animal, produces and releases sperm."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1003,7 +1003,7 @@ external_mappings:
 id: tibia
 label: "tibia"
 description: "The major preaxial endochondral bone in the posterior zeugopod"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1018,7 +1018,7 @@ external_mappings:
 id: tibialis_muscle
 label: "tibialis muscle"
 description: "Either of two muscles of the calf of the leg."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1033,7 +1033,7 @@ external_mappings:
 id: tongue
 label: "tongue"
 description: "A muscular organ in the floor of the mouth."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 - Mouse  Body Part, Organ, or Organ Component; This would change to organism specific persistent IDs as needed
@@ -1049,7 +1049,7 @@ external_mappings:
 id: tumor
 label: "tumor"
 description: "A benign or malignant tissue growth resulting from uncontrolled cell proliferation. Benign neoplastic cells resemble normal cells without exhibiting significant cytologic atypia, while malignant cells exhibit overt signs such as dysplastic features, atypical mitotic figures, necrosis, nuclear pleomorphism, and anaplasia."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1064,7 +1064,7 @@ external_mappings:
 id: undifferentiated
 label: "undifferentiated"
 description: "ambiguous"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1077,7 +1077,7 @@ external_mappings: []
 id: upper_leg
 label: "upper leg"
 description: "The part of the hindlimb between pelvis and the knee, corresponding to the femur."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1092,7 +1092,7 @@ external_mappings:
 id: urine
 label: "urine"
 description: "Excretion that is the output of a kidney."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1107,7 +1107,7 @@ external_mappings:
 id: visceral_adipose_tissue
 label: "visceral adipose tissue"
 description: "Subcutaneous adipose tissue that is located in the peritoneal cavity."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1122,7 +1122,7 @@ external_mappings:
 id: white_adipose_tissue
 label: "white adipose tissue"
 description: "Connective tissue consisting of fat-storing cells and arranged in lobular groups or along minor blood vessels[MP,modified]."
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1137,7 +1137,7 @@ external_mappings:
 id: whole_blood
 label: "whole blood"
 description: "equivalent to blood"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
@@ -1152,7 +1152,7 @@ external_mappings:
 id: other
 label: "other"
 description: "other"
-parent: tissue
+parent: biospecimen
 status: proposed
 notes:
 related_to: []
