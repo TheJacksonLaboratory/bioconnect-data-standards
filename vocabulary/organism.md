@@ -1,6 +1,6 @@
 # Organism Vocabulary
 
-**Definition:** Organism is the biological entity or taxon from which a sample, specimen, or observation is derived. See: [CARO:0001010 organism](https://www.ebi.ac.uk/ols4/api/ontologies/caro/terms?obo_id=CARO%3A0001010).
+**Definition:** Species from which the sample originated.
 
 ## Callithrix jacchus
 
@@ -60,4 +60,3 @@ external_mappings:
 - accession_id: NCBITaxon:10090
   accession_url: http://purl.obolibrary.org/obo/NCBITaxon_10090
 ```
-

@@ -1,6 +1,6 @@
 # Sample Type Vocabulary
 
-**Definition:** Sample Type is the kind of biospecimen or biological material collected, stored, or used for testing, diagnostics, propagation, treatment, or research. See: [NCIT:C70713 Biospecimen Type](https://www.ebi.ac.uk/ols4/api/ontologies/ncit/terms?obo_id=NCIT%3AC70713).
+**Definition:** General form of material, such as tissue, cells, or fluid.
 
 ## amplicon
 
@@ -202,4 +202,3 @@ external_mappings:
 - accession_id: NCIT:C12801
   accession_url: http://purl.obolibrary.org/obo/NCIT_C12801
 ```
-
