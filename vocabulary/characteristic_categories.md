@@ -22,7 +22,7 @@ external_mappings: []
 ```yaml
 id: cell_line
 label: cell line
-description: "Cell Line identifies the cell line associated with a sample."
+description: "A cell population that represents a genetically stable population of cultured cells with a common history."
 parent: characteristic_category
 status: proposed
 notes:
@@ -35,7 +35,7 @@ external_mappings: []
 ```yaml
 id: cell_type
 label: cell type
-description: "Type of cell present in or represented by the sample."
+description: "The distinct morphological or functional form of cell."
 parent: characteristic_category
 status: proposed
 notes:
@@ -50,20 +50,7 @@ external_mappings:
 ```yaml
 id: embedding_matrix
 label: embedding matrix
-description: "Embedding Matrix is the material used to embed a sample."
-parent: characteristic_category
-status: proposed
-notes:
-related_to: []
-external_mappings: []
-```
-
-## fluid type
-
-```yaml
-id: fluid_type
-label: fluid type
-description: "Fluid Type is the liquid biological material or fluid medium associated with a sample; organism-derived fluids."
+description: "The substance used to support and surround a biological sample."
 parent: characteristic_category
 status: proposed
 notes:
@@ -104,7 +91,7 @@ external_mappings:
 ```yaml
 id: preservation_method
 label: preservation method
-description: "Preservation Method describes how a sample is preserved."
+description: "Preservation Method is the preparation or processing technique used for storage or downstream use of a physical sample."
 parent: characteristic_category
 status: proposed
 notes:
@@ -130,7 +117,7 @@ external_mappings: []
 ```yaml
 id: sample_type
 label: sample type
-description: "General form of material, such as tissue, cells, or fluid."
+description: "General form of material, such as tissue/biospecimen, cells, or fluid."
 parent: characteristic_category
 status: proposed
 notes:
@@ -145,7 +132,7 @@ external_mappings:
 ```yaml
 id: sex
 label: sex
-description: "Sex of the source organism, when applicable."
+description: "Sex of the source organism."
 parent: characteristic_category
 status: proposed
 notes:
@@ -160,7 +147,7 @@ external_mappings:
 ```yaml
 id: storage_temperature
 label: storage temperature
-description: "Storage Temperature is the temperature at which a sample is stored."
+description: "Storage Temperature is the temperature at which a sample is stored. Options are in degrees Celsius."
 parent: characteristic_category
 status: proposed
 notes:
@@ -171,9 +158,9 @@ external_mappings: []
 ## strain
 
 ```yaml
-id: strain
-label: strain
-description: "Named strain or genetic background of the source organism."
+id: genetic_background
+label: genetic background
+description: "The complete genetic composition of a strain or individual."
 parent: characteristic_category
 status: proposed
 notes:
@@ -186,9 +173,9 @@ external_mappings:
 ## treatment
 
 ```yaml
-id: treatment
-label: treatment
-description: "Treatment is an intervention, exposure, or condition applied with the intent to modify or alter a characteristic of an organism, individual, sample, or experimental system."
+id: experimental_condition
+label: experimental condition
+description: "The Experimental Condition is an intervention, exposure, factor, or condition applied with the intent to modify or alter a characteristic of an organism, individual, sample, or experimental system."
 parent: characteristic_category
 status: proposed
 notes:
