@@ -28,8 +28,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036367
-  accession_url:
+- accession_id: "JR036367"
+  accession_url: "https://www.jax.org/strain/036367"
 ```
 
 ## CC004 X CC041
@@ -43,8 +43,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036368
-  accession_url:
+- accession_id: "JR036368"
+  accession_url: "https://www.jax.org/strain/036368"
 ```
 
 ## CC006 X CC003
@@ -58,8 +58,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036366
-  accession_url:
+- accession_id: "JR036366"
+  accession_url: "https://www.jax.org/strain/036366"
 ```
 
 ## CC010 X CC006
@@ -73,8 +73,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036365
-  accession_url:
+- accession_id: "JR036365"
+  accession_url: "https://www.jax.org/strain/036365"
 ```
 
 ## CC019 X CC032
@@ -88,8 +88,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036395
-  accession_url:
+- accession_id: "JR036395"
+  accession_url: "https://www.jax.org/strain/036395"
 ```
 
 ## CC032 X CC040
@@ -103,8 +103,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036371
-  accession_url:
+- accession_id: "JR036371"
+  accession_url: "https://www.jax.org/strain/036371"
 ```
 
 ## CC040 X CC010
@@ -118,8 +118,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036372
-  accession_url:
+- accession_id: "JR036372"
+  accession_url: "https://www.jax.org/strain/036372"
 ```
 
 ## CC041 X CC019
@@ -133,8 +133,8 @@ status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: JR036396
-  accession_url:
+- accession_id: "JR036396"
+  accession_url: "https://www.jax.org/strain/036396"
 ```
 
 ## CC080/TauUncJ

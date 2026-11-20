@@ -6,39 +6,52 @@
 
 ```yaml
 id: amplicon
-label: amplicon
-description: A method for targeted DNA sequencing that uses oligonucleotide primers to amplify regions of interest, followed by next-generation sequencing (NGS) for deep coverage of the region.
+label: "amplicon"
+description:
 parent: sample_type
 status: proposed
 notes:
 - definition of the amplicon sequencing method
 related_to: []
 external_mappings:
-- accession_id: NCIT:C204813
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C204813
+- accession_id: "SO:0000006"
+  accession_url: "http://purl.obolibrary.org/obo/SO_0000006"
 ```
 
 ## BAC
 
 ```yaml
 id: bac
-label: BAC
-description: Based upon the natural F plasmid of E. coli. Inserts up to 300 Kb can be cloned and stably maintained as circular molecules.
+label: "BAC"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C1860
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C1860
+- accession_id: "NCIT:C1860"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C1860"
+```
+
+## block
+
+```yaml
+id: block
+label: "block"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings: []
 ```
 
 ## blood
 
 ```yaml
 id: blood
-label: blood
-description: 'NCIT: A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. UBERON: A fluid that is composed of blood plasma and erythrocytes.'
+label: "blood"
+description:
 parent: sample_type
 status: proposed
 notes:
@@ -46,159 +59,315 @@ notes:
 - Which one should we use. NCIT, UBERON or both?'
 related_to: []
 external_mappings:
-- accession_id: NCIT:C12434
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C12434
-- accession_id: UBERON:0000178
-  accession_url: http://purl.obolibrary.org/obo/UBERON_0000178
+- accession_id: "UBERON:0000178"
+  accession_url: "http://purl.obolibrary.org/obo/UBERON_0000178"
 ```
 
-## cell pellet
+## cDNA
 
 ```yaml
-id: cell_pellet
-label: cell pellet
-description: A cell sample collected and compacted by centrifugation of a liquid suspension.
+id: cdna
+label: "cDNA"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C113745
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C113745
+- accession_id: "NCIT:C324"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C324"
 ```
 
 ## cells
 
 ```yaml
 id: cells
-label: cells
-description: The smallest units of living structure capable of independent existence, composed of a membrane-enclosed mass of protoplasm and containing a nucleus or nucleoid.
+label: "cells"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C12508
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C12508
+- accession_id: "NCIT:C12508"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C12508"
 ```
 
-## FFPE Section
+## cell lysate
+
+```yaml
+id: cell_lysate
+label: "cell lysate"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "OBI:1000036"
+  accession_url: "http://purl.obolibrary.org/obo/OBI_1000036"
+```
+
+## cell pellet
+
+```yaml
+id: cell_pellet
+label: "cell pellet"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "NCIT:C113745"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C113745"
+```
+
+## cell supernatant
+
+```yaml
+id: cell_supernatant
+label: "cell supernatant"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "OBI:1000023"
+  accession_url: "http://purl.obolibrary.org/obo/OBI_1000023"
+```
+
+## ChIP DNA
+
+```yaml
+id: chip_dna
+label: "ChIP DNA"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings: []
+```
+
+## curl
+
+```yaml
+id: curl
+label: "curl"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "NCIT:C200486"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C200486"
+```
+
+## FFPE section
 
 ```yaml
 id: ffpe_section
-label: FFPE Section
-description: A tissue section that has been fixed with formalin and embedded in a paraffin block.
+label: "FFPE section"
+description:
 parent: sample_type
 status: proposed
 notes:
 - Also appears in Sample Buffer — consolidate to Sample Type only
 related_to: []
 external_mappings:
-- accession_id: NCIT:C200850
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C200850
+- accession_id: "NCIT:C200850"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C200850"
 ```
 
 ## fluid
 
 ```yaml
 id: fluid
-label: fluid
-description: Material produced by living organisms; it can be a necessary constituent of, or product of an organismal process.
+label: "fluid"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C13236
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C13236
+- accession_id: "NCIT:C25278"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C25278"
 ```
+
 ## gDNA
 
 ```yaml
 id: gdna
-label: gDNA
-description: The DNA that is part of the normal chromosomal complement of an organism.
+label: "gDNA"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C95940
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C95940
+- accession_id: "NCIT:C95940"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C95940"
 ```
 
 ## library
 
 ```yaml
 id: library
-label: library
-description: A collection of DNA molecules that have been cloned in vectors.
+label: "library"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C16223
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C16223
+- accession_id: "NCIT:C16223"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C16223"
 ```
 
 ## lysate
 
 ```yaml
 id: lysate
-label: lysate
-description: The cellular debris and fluid produced by lysis of a cell.
+label: "lysate"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C62004
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C62004
+- accession_id: "NCIT:C62004"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C62004"
+```
+
+## lysed cells
+
+```yaml
+id: lysed_cells
+label: "lysed cells"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings: []
+```
+
+## nucleus suspension
+
+```yaml
+id: nucleus_suspension
+label: "nucleus suspension"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings: []
+```
+
+## plasma
+
+```yaml
+id: plasma
+label: "plasma"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "UBERON:0001969"
+  accession_url: "http://purl.obolibrary.org/obo/UBERON_0001969"
 ```
 
 ## plasmid
 
 ```yaml
 id: plasmid
-label: plasmid
-description: A small cellular inclusion consisting of a ring of DNA that is not in a chromosome but is capable of autonomous replication.
+label: "plasmid"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C754
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C754
+- accession_id: "NCIT:C754"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C754"
 ```
 
-## rna
+## pulverized powder
+
+```yaml
+id: pulverized_powder
+label: "pulverized powder"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings: []
+```
+
+## RNA
 
 ```yaml
 id: rna
-label: rna
-description: A class of RNA molecule containing protein-coding information in its nucleotide sequence that can be translated into the amino acid sequence of a protein.
+label: "RNA"
+description:
 parent: sample_type
 status: proposed
 notes:
 - mRNA definition
 related_to: []
 external_mappings:
-- accession_id: NCIT:C813
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C813
+- accession_id: "CHEBI:33697"
+  accession_url: "http://purl.obolibrary.org/obo/CHEBI_33697"
+```
+
+## serum
+
+```yaml
+id: serum
+label: "serum"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "UBERON:0001977"
+  accession_url: "http://purl.obolibrary.org/obo/UBERON_0001977"
+```
+
+## supernatant
+
+```yaml
+id: supernatant
+label: "supernatant"
+description:
+parent: sample_type
+status: proposed
+notes:
+related_to: []
+external_mappings:
+- accession_id: "NCIT:C106485"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C106485"
 ```
 
 ## tissue
 
 ```yaml
 id: tissue
-label: tissue
-description: An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function.
+label: "tissue"
+description:
 parent: sample_type
 status: proposed
 notes:
 related_to: []
 external_mappings:
-- accession_id: NCIT:C12801
-  accession_url: http://purl.obolibrary.org/obo/NCIT_C12801
+- accession_id: "NCIT:C12801"
+  accession_url: "http://purl.obolibrary.org/obo/NCIT_C12801"
 ```
