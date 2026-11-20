@@ -155,7 +155,7 @@ related_to: []
 external_mappings: []
 ```
 
-## strain
+## genetic background
 
 ```yaml
 id: genetic_background
@@ -170,7 +170,7 @@ external_mappings:
   accession_url: http://www.ebi.ac.uk/efo/EFO_0005135
 ```
 
-## treatment
+## experimental condiiton
 
 ```yaml
 id: experimental_condition
